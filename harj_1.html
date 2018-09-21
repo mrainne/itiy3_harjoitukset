@@ -5,11 +5,21 @@
 <title> ITIY3 Ensimmäinen harjoitus</title>
 </head>
 <body>
-<p>Tämä on kurssin ITIY3 ensimmäinen harjoitus, jossa luodaan html-sivu. Aloitetaan luomalla perusrunko sivulle.</p>
+<h1>ITIY3 ensimmäinen harjoitus</h1>
+<p>Tämä on kurssin ITIY3 ensimmäinen harjoitus, jossa luodaan html-sivu. Käyn läpi harjoituksessa tehtäviä asioita ja kirjoittelen muistiin, mitä olen tekemässä. Aloitetaan luomalla perusrunko sivulle.</p>
 
+<h2>Sivun perusrunko</h2>
+<h3>Dokumentin tyyppi</h3>
 <p>Sivun määritys aloitetaan määrittelemällä dokumentin tyyppi DOCTYPE tagilla. Tagi suljetaan  merkkien &lt; ja &gt; sisälle, ensimmäiseksi sijoitetaan huutomerkki, sitten isoilla kirjailmilla DOCTYPE ja välilyönnin jälkeen dokumentin tyyppi eli html (tyyppi kirjoitetaan pienillä kirjaimilla). </p>
+<h3>Juurielementti</h3>
 <p>Seuraavaksi määritellään ns. juurielementti &lt;html&gt;, joka alkaa dokumentin tyypin määrityksen jälkeen ja se suljetaan dokumentin lopussa. Juurielementissä määritellään parametrina dokumentissa käytetty kieli (lang = "fi"). Kielimääritys kertoo selaimelle, mikä kieli sivulla on käytössä. Jos jonkin sivuston elementin kieli poikkeaa sivun kielestä, kieli voidaan määrittää myös elementtitasolla.</p>
+<h3>Kuvausosa</h3>
 <p>Sitten määritellään kuvausosa eli <b>head</b>-elementti. Kuvausosa sisältää erilaista metadataa mm. dokumentissa käytettävän merkistökoodauksen. Dokumenttiin liitettävät tai linkitettävät skriptit ja tyylimääritykset laitetaan yleensä tähän osaan. Sivun otsikko, joka näkyy selaimen yläpalkissa löytyy myös tästä osasta dokumenttia. Otsikko määritellään <b>title</b>-tagilla. Otsikko kannattaa valita huolella, sillä se toimii sivun tunnisteena/nimenä. Otsikko käytetään paitsi selaimen kirjanmerkeissä, myös hakukoneiden hakutuloslistoissa. <b>meta</b>-elementissä tarvitaan aina attribuutti ja se on ns. tyhjä elementti eli sillä ei ole lopputagia. meta-elementissä voidaan määritellä dokumentille avainsanoja, lyhyt kuvaus sivun sisällöstä, tieto dokumentin tekijästä jne. Skripteille on oma &lt;script&gt;-tagi, tyyli voidaan määritellä &lt;style&gt;-tagin sisällä tai tyylitiedosto voidaan linkittää &lt;link&gt;-tagin avulla, rel-attribuutin avulla määritellään millaisesta linkistä on kyse.</p>
+<h3>Dokumentin sisältö eli body</h3>
+<h4>Yleistä sisältöelementistä</h4>
 <p>Kun määritykset on tehty, päästäänkin varsinaiseen sisältöön eli <b>body</b>-elementtiin. Tähän voidaan sijoitella erilaista sisältöä. Tässä dokumentissa sisältö on toistaiseksi ollut pelkästään tekstiä. Sisältö voi olla myös linkkejä, kuvia tms. muualta verkosta upotettua sisältöä. Tässä osassa voi olla myös skriptejä ja kommentteja, mutta niitä ei näytetä käyttäjälle selaimessa.</p>
+<h4>Kappaleet ja otsikot</h4>
+<p>Tekstiä voidaan muotoilla &lt;p&gt; tageilla, jotka määrittävät kappalejakoa. Otsikoita määritellään &lt;h1&gt;-&lt;h6&gt; tageilla. <b>h1</b> on ylätason otsikko, jossa on suurin fonttikoko, fonttikoko pienenee, kun numero h:n perässä kasvaa. Lisätään dokumenttiin otsikoita.</p>
+
 </body>
 </html>
