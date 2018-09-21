@@ -26,7 +26,52 @@
 <p>Tekstiä voidaan muotoilla pakotetulla rivinvaihdolla, kun halutaan aloittaa teksti uudelta riviltä, mutta ei aloittaa uutta kappaletta. Pakotettu rivinvaihto toimii tagilla &lt;br /&gt;. Tämä on ns. tyhjä tagi, jolla ei ole lopetustagia. Tagin loppussa voi olla / ennen &gt; tai sen voi jättää poiskin, ennen / on oltava välilyönti. Pakotettua rivinvaihtoa on käytetty aloituskappaleessa. Muotoiluun voidaan myös käyttää vaakaviivaa esimerkiksi korostamaan teemasta toiseen siirtymistä. Vaakaviiva tehdään &lt;hr /&gt; tagilla. Tämän kappaleen alaotsikot on eroteltu toisistaan vaakaviivoilla.</p> 
 <hr />
 <h4>Luettelot</h4>
-<p>Joskus tarvitaan listoja, html:ssä on kahdenlaisia listoja numeroimattomia (unordered list) &lt;ul&gt; ja numeroituja &lt;ol&gt; (ordered list). Numeroitu lista voidaan aloittaa mistä tahansa numerosta lisäämällä attribuutti start ja antamalla sille haluttu arvo. Listan elementit merkitään tagilla &lt;li&gt; Listoja voidaan käyttää sisäkkäin eli numeroimattoman listan sisällä voi olla numeroimattomia elementtejä ja toisin päin. Täytyy kuitenkin olla tarkkana, että listojen aloitus- ja lopetustagit eivät mene sekaisin. Sisäkkäisten listojen hierarkiassa voi olla hyvä idea sisentää koodia. Sisennys ei vaikuta siihen, miten koodi selaimessa esit</p>
+<p>Joskus tarvitaan listoja, html:ssä on kahdenlaisia listoja numeroimattomia (unordered list) &lt;ul&gt; ja numeroituja &lt;ol&gt; (ordered list). Numeroitu lista voidaan aloittaa mistä tahansa numerosta lisäämällä attribuutti start ja antamalla sille haluttu arvo. Listan elementit merkitään tagilla &lt;li&gt; Listoja voidaan käyttää sisäkkäin eli numeroimattoman listan sisällä voi olla numeroimattomia elementtejä ja toisin päin. Täytyy kuitenkin olla tarkkana, että listojen aloitus- ja lopetustagit eivät mene sekaisin. Sisäkkäisten listojen hierarkiassa voi olla hyvä idea sisentää koodia. Sisennys ei vaikuta siihen, miten koodi selaimessa esitetään.</p>
+
+<p>Kokeillaan tehdä erilaisia luetteloita, aloitetaan numeroimattomalla listalla.
+<ul>
+<li>tähän tulee eka list item eli li</it>
+<li>muista sulkea list itemin tagi</it>
+<li>muista sulkea ul tagi</li>
+</ul>
+Tagien sulkeminen on helpompi muistaa, kun kirjoittaa molemmat tagit heti ja sisällön niiden väliin. Seuraavaksi tehdään numeroitu lista, ilman start-attribuuttia.
+<ol>
+<li>tässä pitäisi olla edessä ykkönen</li>
+<li>tässä kakkonen</li>
+<li>kolmonen</li>
+<li>ja mikäs sitten</li>
+</ol>
+Kokeillaan sitten aloittaa lista vaikkapa numerosta 42.
+<ol start="42">
+<li>kuusi kertaa seitsemän</li>
+<li>neljäkymmentäkolme</li>
+</ol>
+Numeroinnin voi kääntää attribuutilla reversed.
+<ol reversed>
+<li>viisi</li>
+<li>neljä</li>
+<li>kolme</li>
+<li>kaksi</li>
+<li>yksi</li>
+</ol>
+Limitetään listoja.
+<ul>
+<li>kolme pointtia
+<ol>
+<li>eka pointti
+<ul>
+<li>pointin pointti</li>
+<li>pointin toinen pointti</li>
+</ul>
+</li>
+<li>toka pointti</li>
+<li>kolmas pointti</li>
+</ol>
+</li>
+<li>ja vielä lisäpointti</li>
+</ul>
+Numeroimattoman listan edessä olevien pallukoiden muoto näyttäisi muuttuvan, kun lisätään tasoja.  
+</p>
 <hr />
 </body>
 </html>
