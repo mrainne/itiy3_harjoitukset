@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>ITIY3 ensimmäinen harjoitus</h1>
-<p>Tämä on kurssin ITIY3 ensimmäinen harjoitus, jossa luodaan html-sivu. Käyn läpi harjoituksessa tehtäviä asioita ja kirjoittelen muistiin, mitä olen tekemässä. Aloitetaan luomalla perusrunko sivulle.</p>
+<p>Tämä on kurssin ITIY3 ensimmäinen harjoitus, jossa luodaan html-sivu. <br /> Käyn läpi harjoituksessa tehtäviä asioita ja kirjoittelen muistiin, mitä olen tekemässä. Aloitetaan luomalla perusrunko sivulle.</p>
 
 <h2>Sivun perusrunko</h2>
 <h3>Dokumentin tyyppi</h3>
@@ -18,8 +18,15 @@
 <h3>Dokumentin sisältö eli body</h3>
 <h4>Yleistä sisältöelementistä</h4>
 <p>Kun määritykset on tehty, päästäänkin varsinaiseen sisältöön eli <b>body</b>-elementtiin. Tähän voidaan sijoitella erilaista sisältöä. Tässä dokumentissa sisältö on toistaiseksi ollut pelkästään tekstiä. Sisältö voi olla myös linkkejä, kuvia tms. muualta verkosta upotettua sisältöä. Tässä osassa voi olla myös skriptejä ja kommentteja, mutta niitä ei näytetä käyttäjälle selaimessa.</p>
+<hr />
 <h4>Kappaleet ja otsikot</h4>
-<p>Tekstiä voidaan muotoilla &lt;p&gt; tageilla, jotka määrittävät kappalejakoa. Otsikoita määritellään &lt;h1&gt;-&lt;h6&gt; tageilla. <b>h1</b> on ylätason otsikko, jossa on suurin fonttikoko, fonttikoko pienenee, kun numero h:n perässä kasvaa. Lisätään dokumenttiin otsikoita.</p>
-
+<p>Tekstiä voidaan muotoilla &lt;p&gt; tageilla, jotka määrittävät kappalejakoa. Otsikoita määritellään &lt;h1&gt;–&lt;h6&gt; tageilla. <b>h1</b> on ylätason otsikko, jossa on suurin fonttikoko, fonttikoko pienenee, kun numero h:n perässä kasvaa. Tällä sivulla on otsikoita h1–h4.</p>
+<hr />
+<h4>Pakotettu rivinvaihto ja vaakaviiva</h4>
+<p>Tekstiä voidaan muotoilla pakotetulla rivinvaihdolla, kun halutaan aloittaa teksti uudelta riviltä, mutta ei aloittaa uutta kappaletta. Pakotettu rivinvaihto toimii tagilla &lt;br /&gt;. Tämä on ns. tyhjä tagi, jolla ei ole lopetustagia. Tagin loppussa voi olla / ennen &gt; tai sen voi jättää poiskin, ennen / on oltava välilyönti. Pakotettua rivinvaihtoa on käytetty aloituskappaleessa. Muotoiluun voidaan myös käyttää vaakaviivaa esimerkiksi korostamaan teemasta toiseen siirtymistä. Vaakaviiva tehdään &lt;hr /&gt; tagilla. Tämän kappaleen alaotsikot on eroteltu toisistaan vaakaviivoilla.</p> 
+<hr />
+<h4>Luettelot</h4>
+<p>Joskus tarvitaan listoja, html:ssä on kahdenlaisia listoja numeroimattomia (unordered list) &lt;ul&gt; ja numeroituja &lt;ol&gt; (ordered list). Numeroitu lista voidaan aloittaa mistä tahansa numerosta lisäämällä attribuutti start ja antamalla sille haluttu arvo. Listan elementit merkitään tagilla &lt;li&gt; Listoja voidaan käyttää sisäkkäin eli numeroimattoman listan sisällä voi olla numeroimattomia elementtejä ja toisin päin. Täytyy kuitenkin olla tarkkana, että listojen aloitus- ja lopetustagit eivät mene sekaisin. Sisäkkäisten listojen hierarkiassa voi olla hyvä idea sisentää koodia. Sisennys ei vaikuta siihen, miten koodi selaimessa esit</p>
+<hr />
 </body>
 </html>
