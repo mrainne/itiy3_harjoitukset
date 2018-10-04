@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<meta charset="utf-8"/>
+	<meta  name="description" content="HTML-harjoitus, jossa määritellään eri elementit ja attribuutit..."/>
+	<title>ITIY3 – tehtävä 2</title>
+</head>
+<body>
+	<header id="alku">
+		<p>Ja taas mennään. Ensin luodaan tiedosto, määritellään dokumentin
+		tyyppi	doctype-tägin avulla, sitten aloitetaan  <i>html</i>-elementti,
+		joka alkaa <i>head</i>-elementillä. Siinä määritellään metadatana mm.
+		dokumentin käyttämä 	merkistökoodaus ja dokumentin otsikko. Lisäksi
+		määritellään tietysti dokumentin 	otsikko
+		<i>title</i>-elementissä.</p>
+		<h1>HTML-esimerkki – harjoitussivu</h1>
+		<p>Otsikko on määritelty <i>h1</i>-elementtinä, koska se on koko
+		dokumentin ns. <emph>pääotsikko</emph>. </p>
+		<p>Tässä harjoituksessa käsitellään html-dokumentin eri elementtejä,
+		sekä tutustutaan linkittämiseen ja kuvien upottamiseen. </p>
+		<p>Seuraavaksi luodaan numeroimaton lista, joka sisältää dokumentin
+		sisällysluettelon. Ensimmäisistä kappaleista ja listasta voidaan tehdä
+		<i>header</i>-elementti, joka on dokumentin eräänlainen alkutunniste ja
+		luettelo voidaan merkata <i>nav</i>-elementillä
+		<emph>navigoinniksi</emph>.</p>
+		<p>Harjoituksen sisältö:</p>
+		<nav>
+		<ul>
+			<li><a href="#osa1">osa 1</a></li>
+			<li><a href="#osa2">osa 2</a></li>
+			<li><a href="#osa3">osa 3</a></li>
+			<li><a href="#osa4">osa 4</a></li>
+		</ul>
+		</nav>
+	</header>
+	<p>Nämä elementit ovat semanttisia, eivätkä vaikuta dokumentin ulkoasuun,
+	jota muokataan tyylitiedostojen (css) avulla.</p>
+	<p>Seuraavaksi luodaan <i>section</i>-elementtejä, jotka määrittävät
+	sisältöä.</p>
+	<section>
+		<h1 id="osa1">Osa 1 – Lohkolainaus</h1>
+		<p>Tässä osiossa perehdytään lainatun tekstin esittämiseen
+		html-dokumentissa <i>blockquote</i>-elementin avulla. Lainaus voi olla
+		peräisin toiselta verkkosivulta, lehdestä, kirjasta tai melkeinpä mistä
+		vaan.</p>
+		<blockquote cite="https://www.w3.org/standards/webdesign/htmlcss">
+		<h2>What is HTML?</h2>
+		<p>HTML is the language for describing the structure of Web pages. HTML
+		gives authors the means to:</p>
+		<ul>
+			<li>Publish online documents with headings, text, tables, lists,
+			photos etc.</li>
+			<li>Retrieve online information via hypertext links, at the click of
+			a button.</li>
+			<li>Design forms for conducting transactions with remote services,
+			for use in searching for information, making reservations, ordering
+			products, etc.</li>
+			<li>Include spread-sheets, video clips, sound clips, and other
+			applications directly  in their documents.</li>
+		</ul>
+		<p>With HTML, authors describe the structure of pages using markup. The
+		elements of the language label pieces of content such as “paragraph,”
+		“list,” “table,” and so on.</p>
+		<footer>
+		<p><a href="https://www.w3.org/standards/webdesign/htmlcss#whathtml"
+		target="_blank"><cite>What is HTML?</cite></a> – W3C Standards Web
+		Design and Applications</p>
+		</footer>
+		</blockquote>
+		<p><cite>What is HTML?</cite> – W3C Standards Web Design and
+		Applications</p>
+		<p>Lainaus muotoillaan <i>p</i>- ja <i>ul</i>-elementtien avulla
+		samanlaiseksi kuin se on alkuperäisenä. Lainauksen alkuperä voidaan
+		merkitä <i>cite</i>-attribuutilla. Attribuutti ei näy sivulla, mutta
+		sitä voidaan hyödyntää muihin tarkoituksiin.</p>
+		<p>Lainauksen lähde voidaan esittää myös <i>cite</i>-elementin avulla,
+		tällöin sitaatin alkuperä esitetään myös sivulla näkyvänä elementtinä.
+		<i>cite</i>-elementtiä käytetään ilmaisemaan viittaus alkuperäiseen
+		teokseen ja se voi sisältää linkin verkkoresurssiin tai viittauksen
+		painettuun lähteeseen (kirja, julkaisu jne.). Elementti voidaan asettaa
+		<i>blockquote</i>-elementin sisälle tai se voidaan sijoittaa omaan
+		kappaleeseensa ennen lainausta tai sen jälkeen. Jos elementti
+		sijoitetaan lainauksen sisälle, se voidaan erottaa varsinaisesta
+		lainauksesta käyttämällä  <i>footer</i>-elementtiä. Yllä on käytetty
+		molempia tapoja, itse suosisin jälkimmäistä tapaa, koska mielestäni
+		lainaus ja lähde ovat siinä paremmin kontekstissa. </p>
+		<p>Lyhyempien lainausten esittämiseen voidaan käyttää
+		<i>q</i>-elementtiä. Elementti lisää lainauksen ympärille lainausmerkit.
+		<q lang="en">To be or not to be.</q>. Kielimääritys muuttaa
+		lainausmerkkien ulkonäköä.</p>
+		<footer><a href="#alku">Takaisin alkuun</a></footer>
+	</section>
+	<section>
+		<h1 id="osa2">Osa 2 – Esimuotoiltu teksti</h1>
+		<p>Tässä osassa tutustutaan <i>pre</i>-elementtiin ja esimuotoiltuun
+		tekstiin. Joskus on tarvetta esittää verkkosivulla tekstiä samassa
+		muodossa kuin se esitetään jossain muualla. Esimerkiksi
+		ohjelmointikoodia, runoja yms. voidaan haluta esittää juuri
+		tietynlaisina.</p>
+		<pre>Eri elementtityypit
+		<strong>lohkotasolla</strong>:
+				h2
+				p
+				blockquote
+				hr
+		<strong>tekstitasolla</strong>:
+				q
+				cite
+				br
+		</pre>
+		<p>Muotoilu säilyy ja teksti esitetään tasakokoisella(<i>monospace</i>)
+		kirjasintyylillä. Elementti voi sisältää muita tekstitason elementtejä,
+		mutta ei kuvia, linkkejä tai lohkoelementtejä.</p>
+		<p>Koodia esitettäessä voidaan käyttää lisäksi <i>code</i>- tai
+		<i>samp</i>-elementtiä. </p>
+		<pre>
+		<code>
+		&lt;ol&gt;
+		 &lt;li&gt;kohta 1&lt;li&gt;
+	 	 &lt;li&gt;kohta 2&lt;li&gt;
+		&lt;/ol&gt;
+		</code>
+		</pre>
+		<p>Tabulointi käyttäytyy <i>pre</i>-elementissä eri tavalla kuin
+		editorissa.</p>
+		<footer><a href="#alku">Takaisin alkuun</a></footer>
+	</section>
+	<section>
+	<h1 id="osa3">Osa 3 – Kuvien upottaminen</h1>
+	<p>Tässä osiossa käydään läpi kuvien upottamista dokumenttiin.</p>
+	<img src="http://people.uta.fi/~av44195/misc/img/kukka.jpg" alt="Kukkia
+	metsäpolulla." />
+	<p>Kuvia voidaan upottaa lohkoelementtien väliin tai niiden sisälle myös
+	tekstitasonelementteihin. Kuva määritellään <i>img</i>-elementillä, joka on
+	ns. tyhjä tagi eli siltä puuttuu lopputagi.</p>
+	<p>Kuva ladataan <i>img</i>-elementin attribuuttiin <i>src</i>
+	määritellystä verkko-osoitteesta. Osoite voi olla joko absoluuttinen tai
+	suhteellinen.</p>
+	<p>Lisäksi käytetään <i>alt</i>-attribuuttia, jolla voidaan kuvailla
+	kuvan roolia dokumentissa tai kuvan sisältöä, tyhjä arvo ilmaisee
+	selaimelle, että kuvalla on lähinnä koristeellinen rooli. Molemmat
+	<img src="http://people.uta.fi/~av44195/misc/img/kukka.jpg" alt="Kukkia
+	metsäpolulla." />
+	attribuutit ovat tarpeellisia, mutta vain <i>src</i>-attribuutin puuttuminen
+	estää kuvan näyttämisen sivulla.</p>
+	<p>Ensimmäinen kuva lisätään ensimmäisen ja toisen kappaleen väliin, toinen
+	kuva lisätään edellisen kappaleen sisään. En viitsi ladata kuvaa itselleni,
+	joten käytän edelleen absoluuttista polkua suhteellisen sijaan. Tekstin
+	sekaan sijoitettu kuva venyttää tekstirivin korkeutta. Kappaleiden väliin
+	sijoitettu kuva taas asemoituu kappaleiden väliin sivun vasempaan
+	laitaan. Jos <i>src</i>-attribuutti on viallinen, näyttävät jotkin
+	selaimet sen sijaan <i>alt</i>-attribuutin sisältämän tekstin.</p>
+	<p>Kuvan kokoa voidaan säätää <i>width</i>- ja
+	<i>height</i>-attribuuteilla. Jos annetaan vain toinen arvo, toinen
+	määritellään automaattisesti, siten että kuvan suhteet säilyvät. Arvot
+	määritellään pikseleinä, mutta attribuutin arvona on vain pisteiden määrä
+	ilman yksiköitä.</p>
+	<p>Kuvat voidaan myös merkata <i>figure</i>-elementillä. Lohko voi sisältää
+	kuvan lisäksi myös tekstiä ja selittävää tekstiä. Kuvateksti voidaan
+	lisätä <i>figcation</i>-elementillä.</p>
+	<figure>
+	<img src="http://people.uta.fi/~av44195/misc/img/kukka.jpg" alt="Kukkia
+	metsäpolulla." />
+	<figcaption><b>Sinivuokkoja</b> metsäpolulla.</figcaption>
+	<p><i>figure</i>-elementti sisentää kuvaa.</p>
+	</figure>
+	<footer><a href="#alku">Takaisin alkuun</a></footer>
+	</section>
+	<section>
+	<h1 id="osa4">Osa 4 – Hyperlinkit ja hypertekstiankkurit</h1>
+	<p>Ankkurielementti &lt;a&gt; määrittää hyperlinkin kohdan dokumentissa.
+	Linkkinä voi toimia teksti tai kuva tai vaikka kokonainen lohkoelementti.
+	</p>
+	<p>Hyperlinkkiesimerkkejä:</p>
+	<p>Linkki yliopiston sivuille:</p>
+	<p>Tekstilinkki <a href="http://www.uta.fi" target="uta">UTA</a>:n
+	etusivulle.</p>
+	<p>Kuvalinkki:</p> <a href="http://www.uta.fi" target="uta"><img
+	src="http://www.uta.fi/sites/default/files/inline-images/logo_fin_small.jpg"
+	alt="UTA logo" height="60">
+	<p>Myös kuvan linkistä pääseen yliopiston etusivulle.</p>
+	</a>
+	<p>Linkki voidaan määrittää avautumaan uuteen välilehteen tai ikkunaan tai
+	se voidaan avata samaan välilehteen tai ikkunaan, joka on jo avoinna.
+	Kohteen voi valita <i>target</i>-attribuutin avulla.</p>
+	<ul>
+		<li><pre>target="_blank"</pre> avaa linkin uuteen välilehteen ja siirtää
+		fokuksen sinne.</li>
+		<li><pre>target="jokunimi"</pre> avaa linkin välilehteen nimeltään
+		<i>jokunimi</i>, mikäli tämännimistä välilehteä ei ole, avataan uusi.
+		Samaa välilehteä voidaan käyttää useamman linkin näyttämiseen.
+		Tällöin uusi sisältö korvaa vanhan.</li>
+	</ul>
+	<p>Yllä olevissa esimerkeissä käytetään kohteena välilehteä, jonka nimi on
+	<i>uta</i>. Myös lohkolainauksen <i>footer</i>-elementissä olevaan <i>
+	cite</i>-elementtiin on lisätty linkki lähdesivulle.</p>
+	<p>Linkki voidaan määrittää avaamaan sivu jostain tietystä kohdasta,
+	jos sivulla on määritelty sisäinen linkitys <i>id</i>-attribuuteilla.
+	Näitä attribuutteja voi etsiä sivun lähdekoodista, niihin viitataan
+	lisäämällä verkko-osoitteen perään #+id.</p>
+	<p>Jotta alkuosan navigoinnista olisi jotain iloa, määritellään siihen
+	sivun sisäinen linkitys. Listan elementeille määritellään ankkuri ja eri
+	osien otsikoille annetaan vastaavat<i>id</i>-attribuutit.</p>
+	<p>Lisäksi eri osioiden ja koko sivun loppuun voidaan määritellä linkki
+	sivun alkuun.</p>
+	<footer><a href="#alku">Takaisin alkuun</a></footer>
+	</section>
+	<footer>
+	<h2>harjoitus 2</h2>
+	<address><a
+	href="https://learning2.uta.fi/course/view.php?id=13781">ITIY3</a>
+	Moodle sivu – UTA</address>
+	</footer>
+</body>
+</html>
