@@ -1,0 +1,18 @@
+/* ITIY3 Harjoitus 3 tyyiltiedosto - tyylit.css */
+
+code {
+	color: green;
+	}
+	
+i {
+	color: gray;
+	}
+
+main {
+	background-color: #ccff99;
+	}
+
+header, footer {
+	background-color: #ff99ff;
+	}
+	

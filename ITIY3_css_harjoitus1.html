@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title> ITIY3 CSS-harjoitus 1a</title>
+<link rel="stylesheet" href="tyylit.css">
+<style>
+h2, p {
+	color: blue;
+	}
+
+h2 {
+	color: red;
+	text-align: center;
+	transform: uppercase;
+	}
+</style>
+</head>
+<body>
+<header style="color: pink">
+<h1 style="color: green">Tyylit tutuksi</h1>
+<p>Tällä kertaa harjoitellaan tyylien lisäämistä dokumentteihin. Tyyleillä tarkoitetaan dokumentin ulkonäköön liittyvää informaatiota,
+kuten tekstin tai taustan väriä, kirjasintyyppiä ja -kokoa, tekstin linjausta jne. Tyylimääritys voidaan tehdä erillisenä tiedostona (esim. tyyli.css),
+joka linkataan dokumenttiin <code>&lt;head&gt;</code>-elementissä, tyylejä voidaan määritellä <code>&lt;style&gt;</code>-tagilla,
+dokumentin <code>&lt;head&gt;</code>-elementissä tai <code>style</code>-attribuutilla itse elementissä. Kaksi ensimmäistä tapaa määrittävät
+dokumenttikohtaiset tyylit, viimeinen määrittää elementtikohtaisen tyylin. Yleensä on parempi käyttää dokumenttikohtaisia tyylimäärityksiä
+kuin elementtikohtaisia. Jos elementtikohtaista tyylimääritystä halutaan muuttaa, se täytyy tehdä jokaiselle elementille erikseen, kun taas
+dokumenttikohtaisilla tyyleillä voidaan kerralla vaikuttaa kaikkiin samanlaisiin elementteihin. Tässä <code>&lt;header&gt;</code>-elementille
+on määritelty väriksi pinkki ja <code>&lt;h1&gt;</code>-elementille vihreä. Otsikkokin olisi vaaleanpunainen ellei sille olisi annettu omaa
+tyylimäärettä.</p>
+</header>
+<main>
+<section>
+<h2>Tyylien lisääminen <code>&lt;head&gt;</code>-elementtiin</h2>
+<p>Vaikka tyylejä voidaan muuttaa elementtikohtaisesti, on kuitenkin parempi tehdä tyylimäärityksistä koko dokumenttia koskevia, tällöin tyyli
+pysyy yhdenmukaisena koko dokumentissa ja kaikki elementit, joilla on sama tyylimääritys voidaan muuttaa muuttamalla yhtä tyylimääritystä.
+Tehdään ensin tyylimäärityksiä lisäämällä <code>&lt;style&gt;</code>-tagi dokumentin <code>&lt;head&gt;</code>-elementtiin.</p>
+<p>Määritellään dokumentin kaikki h2-tason otsikoille samanlainen tyyli. Valitaan otsikoille punainen väri, keskitetään otsikot ja muutetaan
+pienet kirjaimet isoiksi. Määritys tehdään seuraavasti:</p>
+<pre>
+<code>
+&lt;style&gt;
+h2 {
+    color: red;
+    text-align: center;
+    transform: uppercase;
+}
+&lt;/style&gt;
+</code>
+</pre>
+<p>
+Ensimmäisenä ilmaistaan mihin elementteihin tyylimääritykset kohdistuvat. Sen jälkeen lisätään kaarisulkeisiin tyylimääreet. Määre päätetään puolipisteeseen.
+Määreet voidaan kirjoittaa samalle riville, mutta on yleensä selkeämpää kirjoittaa jokainen määre omalle rivilleen. Kun otsikko ennen määritystä oli musta,
+sivun vasemmassa laidassa ja sisälsi pieniä ja suuria kirjaimia, niin määrityksen jälkeen sen pitäisi olla punainen, keskellä sivua ja ainoastaan isoja kirjaimia.</p>
+<p>Sama tyyli voidaan määritellä useammalle elementille samalla kertaa. Esimerkiksi muutetaan <code>&lt;p&gt;</code>- ja <code>&lt;h2&gt;</code>
+-elementtien väri voidaan määritellä yhtenäiseksi määrityksellä</p>
+<pre>
+<code>
+h2, p {
+     color: blue;
+}
+</code>
+</pre>
+<p>Nyt väliotsikon väri säilyi punaisena, mutta kappaleiden väri muuttui siniseksi. Otsikon punainen väri säilyi, koska yhteinen määritys on kirjoitettu otsikkojen
+tyylimääritystä ennen, jolloin jälkimmäinen kumoaa aiemmin tehdyn tyylimäärityksen. Aiemmin pinkkinä näkynyt ensimmäinen kappale muuttui myös siniseksi,
+sillä pinkki väri määriteltiin <code>&lt;header&gt;</code>-elementin ominaisuudeksi. Koska <code>&lt;header&gt;</code> on elementtihierarkiassa
+korkeammalla kuin <code>&lt;p&gt;</code>, otetaan käyttöön <code>&lt;p&gt;</code>:lle määritelty tyyli.</p>
+</section>
+<section>
+<h2>Ulkoisen tyylitiedoston linkittäminen</h2>
+<p>Tyylit voidaan määritellä myös ulkoisessa tyylitiedostossa. Tyylitiedoston tiedostopääte on <code>.css</code>. Linkitys määritellään dokumentin
+<code>&lt;head&gt;</code>-elementissä tähän tapaan:</p>
+<pre><code>
+&lt;link rel="stylesheet" href="tyylit.css"&gt;
+</code></pre>
+<p>&lt;link&gt;-elementillä on attribuutti <code>rel</code>, jonka arvo on <i>stylesheet</i>. Tehdään oma tyylitiedosto <code>tyylit.css</code> ja
+linkitetään se dokumenttiin.</p>
+<p>Jotta tiedosto vaikutusta olisi helpompi seurata, tehdään tiedostoon oma tyyli <code>&lt;code&gt;</code>-elementeille. Kun sivu ladataan uudelleen,
+huomataan elementtien värin muuttuneen vihreäksi. Määritellään vielä dokumentin <code>&lt;main&gt;</code>-elementille taustaväri,
+värimääritykset voidaan tehdä paitsi nimellä, myös värin rgb-koodilla. Tällöin värin määritys alkaa merkillä #, jota seuraa 6 <i>heksadesimaalilukua</i>
+ts. lukuja 0-9 sekä kirjaimet a-f. Ja harjoituksen vuoksi asetetaan myös <code>&lt;header&gt;</code> ja <code>&lt;footer&gt;</code> taustaväri.
+Huomataan, että eri osien välille jää valkoinen kaistale. </p>
+<p>Värien kanssa olisi hyvä miettiä, ettei tee liian räikyvää. Vaikka tässä on käytetty vastakkaisia värejä, se ei välttämättä ole aina paras mahdollinen idea,
+koska se rasittaa silmiä ja tekee sivusta levottoman.</p>
+</section>
+</main>
+<footer>mrainne 15.10.2018</footer>
+</body>
+</html>
