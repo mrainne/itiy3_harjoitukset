@@ -1,0 +1,160 @@
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+/* yläosa */
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+#topbox {
+	background: #d4d4d4;
+	background-image: url(bg-gray.png);
+	padding: 20px 30px;
+}
+
+#topbox h1 {
+	font-size: 3.5em;
+	color: #555;
+	padding: 1em;
+	margin: 10px 0px  10px 150px;
+	line-height: 1;
+	background: rgba(192, 192, 192, 0.75);
+	border-left: solid 10px #f00;
+}
+
+#topbox h1 span {
+	font-size: .35em;
+	color: #f00;
+}
+
+#topbox p {
+	background: rgba(85, 85, 85, 0.6);
+	padding: 2em 4em;
+	line-height: 2;
+	border-right: solid 10px #f00;
+}
+
+#topbox p span {
+	background: silver;
+	padding: 3px;
+	box-shadow: 4px 0 0 0 silver, -4px 0 0 0 silver;
+}
+
+.logo {
+	float: left;
+	margin-top: 60px;
+}
+
+/* navigointipalkki */
+.nav {
+	box-shadow: 0px 3px 8px 0px #848484;
+}
+.nav ul {
+	background-color: #d9d9d9;
+	margin: 0;
+	padding: .75em;
+	padding-left: 2.5em;
+	border-top: solid 2px #f00;
+	border-bottom: solid 2px #f00;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav li a {
+	padding: .5em;
+	text-decoration: none;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: #18a2ce;
+}
+
+a:hover, .nav li a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	background: silver;
+}
+
+/* sisältöosa */
+#sisalto {
+	padding: 10px;
+	margin: 0 2em;
+}
+
+#sisalto h1 {
+	margin: .2em 0 1em;
+}
+
+#sisalto p {
+	margin: 1em 0;
+}
+
+.r-float {
+	float: right;
+	margin: 0 0 1em 2em;
+	border: solid 10px #999;
+	border-radius: 1em;
+}
+
+.col-2 {
+	column-count: 2;
+	column-gap: 1em;
+	margin-bottom: 1.5em;
+	border-top: dotted 1px #c8c8c8;
+	padding-top: 1em;
+}
+
+.clear {
+	clear: both;
+}
+
+#sisalto .col-2 p {
+	margin-top: 0;
+}
+
+/* alaosa */
+.bottombox {
+	background-color: #d9d9d9;
+	background-image: url(bg-gray-1.png), url(bg-gray-1.png);
+	background-repeat: repeat-y;
+	background-position: left, right;
+	padding: .5em 125px;
+}
+
+.bottombox ul {
+	list-style-type: none;
+}
+
+.bottombox li {
+	margin-bottom: 5px;
+}
+
+.bottombox li a {
+	padding: 5px 0;
+	text-decoration: none;
+}
+
+.bottombox li a:hover {
+	text-decoration: underline;
+}
+
+.wrap {
+	width: 940px;
+	margin: 0 auto;
+	background: white;
+}
+
+body {
+	margin:0;
+	background: rgb(60, 60,60);
+}
