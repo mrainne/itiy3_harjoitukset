@@ -1,0 +1,132 @@
+body {
+	font-family: GillSans, Calibri, sans-serif ; 
+	font-size: 1em;
+	margin: 0;
+	}
+
+h1,h2,p,ul {
+	margin: 0;
+	padding: 0; 
+	}
+	
+h1, h2 {
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	color: #3b7900;
+	padding: 0 5% 20px;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+p {
+	font-size: 1.1em;
+	padding: 0 5% 10px;
+}
+
+.header {
+	overflow: hidden;
+}
+
+.header img {
+	height: 100px;
+	vertical-align: bottom;
+}
+
+.box img {
+	max-width: 100%;
+}
+
+.box {
+	background: #f5f5f5;
+	padding: 10px 0;
+}
+
+.nav {
+	background: silver;
+}
+
+.nav ul {
+	list-style-type: none;
+	padding: 5px 0;
+}
+
+.nav li {
+	text-align: center;
+	padding: 3px 10px;
+}
+
+.nav a {
+	color: #3b7900;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	background: #ccc;
+}
+
+.nav a:hover {
+	background: #ddd;
+}
+
+.nav a:active {
+	background: #f1f1f1;
+}
+
+@media (min-width: 370px) {
+	.ruutukuva {
+		display: block;
+		margin: 10px auto;
+	}
+	.nav ul {
+		width: 370px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+}
+
+@media (min-width: 627px) {
+	.header img {
+		height: auto;
+		max-width: 100%;
+	}
+	.nav ul {
+		width: 100%;
+		padding: 10px 3%;
+	}
+	.nav li, .nav a {
+		display: inline;
+	}
+	h1, h2 {
+		padding-top: 20px;
+	}
+	h1, h2, p {
+		max-width: 550px;
+	}
+	img.ruutukuva {
+		max-width: 35%;
+		float: right;
+		margin: 1em;
+	}
+	div {
+		overflow: hidden;
+	}
+}
+
+@media (min-width: 940px) {
+	.content {
+		width: 940px;
+		margin: 0 auto;
+		border-bottom: solid 30px #3b7900;
+	}
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	img.ruutukuva {
+		margin-top: -6em;
+	}
+}

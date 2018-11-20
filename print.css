@@ -1,0 +1,15 @@
+/* Tulostustyylit - ITIY3 harjoitus 5 */
+
+.nav { 
+	display: none; 
+}
+
+p {
+	 width: 50%; 
+	 margin: 5mm 15%; 
+}
+
+.box img {
+	 width: 50%;
+	  margin: 10mm 15%;
+}
